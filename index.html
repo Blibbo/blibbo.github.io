@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+    (function () {
+      document.documentElement.classList.add('no-theme-transition');
+
+      const stored = localStorage.getItem('theme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = stored ?? (systemDark ? 'dark' : 'light');
+
+      document.documentElement.setAttribute('data-theme', theme);
+
+      requestAnimationFrame(() => {
+        document.documentElement.classList.remove('no-theme-transition');
+      });
+    })();
+    </script>
+    <style>
+
+      :root {
+        --dark-mode-bg: #283137;
+        --light-mode-bg: white;
+        background-color: var(--light-mode-bg);
+
+        --current-bg-color: var(--light-mode-bg);
+      }
+
+      [data-theme="dark"] {
+        background-color: var(--dark-mode-bg);
+
+        --current-bg-color: var(--dark-mode-bg);
+      }
+
+      .no-theme-transition *, .no-theme-transition *::before, .no-theme-transition *::after {
+        transition: none !important;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blibbo</title>
+    
+		<link rel="modulepreload" href="/_app/immutable/entry/start.0pl0NNd5.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Bm0TXPjc.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BA-1fr47.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Dxb26_4l.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/mL27wEOk.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.BErtX1_2.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Bn-5s4lz.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BGPU9Dvu.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Cfag3KCh.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/hb6Co_U-.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/C1y3lRxf.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/D35qIoXW.js">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1pewkpj = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.0pl0NNd5.js"),
+						import("/_app/immutable/entry/app.BErtX1_2.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

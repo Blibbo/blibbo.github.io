@@ -1,1 +1,0 @@
-let o="bull-secure-overly.ngrok-free.app";const t=location.protocol;o=o;const n=t+"//"+o+"/api";async function c(e){const r=await fetch(`${n}${e}`);if(!r.ok)throw new Error("API error");return r.json()}export{c as a};

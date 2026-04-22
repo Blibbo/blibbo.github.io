@@ -10,17 +10,15 @@
       const theme = stored ?? (systemDark ? 'dark' : 'light');
 
       document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('theme', theme); // mathfield virtual keyboard requires this
 
       requestAnimationFrame(() => {
         document.documentElement.classList.remove('no-theme-transition');
       });
+
     })();
     </script>
     <style>
-
-      html {
-        background-color: red;
-      }
 
       :root {
         --dark-mode-bg: #283137;
@@ -28,12 +26,19 @@
         background-color: var(--light-mode-bg);
 
         --current-bg-color: var(--light-mode-bg);
+
+        --dark-mode-text: white;
+        --white-mode-text: black;
+        --text-color: var(--white-mode-text);
+        color: var(--text-color);
       }
 
       [data-theme="dark"] {
         background-color: var(--dark-mode-bg);
 
         --current-bg-color: var(--dark-mode-bg);
+
+        --text-color: var(--dark-mode-text);
       }
 
       .no-theme-transition *, .no-theme-transition *::before, .no-theme-transition *::after {
@@ -45,12 +50,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blibbo</title>
     
-		<link rel="modulepreload" href="/_app/immutable/entry/start.BMMcOndX.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/C4-jE7Ps.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.BmlrwGzD.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/B3Bneu-J.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/C5a4dTmm.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/EC1b6dsO.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/Chn8Vsxa.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.ByefLRHh.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.gvkY0Htk.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/BZvgYRfh.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/BwHNii0A.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/Nr_TMK_u.js">
@@ -62,15 +67,15 @@
     <div style="display: contents">
 			<script>
 				{
-					__sveltekit_ot7e9 = {
+					__sveltekit_1pbq5z3 = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.BMMcOndX.js"),
-						import("/_app/immutable/entry/app.ByefLRHh.js")
+						import("/_app/immutable/entry/start.BmlrwGzD.js"),
+						import("/_app/immutable/entry/app.gvkY0Htk.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});

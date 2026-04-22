@@ -11,17 +11,16 @@
 
       document.documentElement.setAttribute('data-theme', theme);
 
-  const darkBg = 'black';
-  const lightBg = 'black';
-  document.querySelector('meta[name="theme-color"]')
-    .setAttribute('content', theme === 'dark' ? darkBg : lightBg);
-
       requestAnimationFrame(() => {
         document.documentElement.classList.remove('no-theme-transition');
       });
     })();
     </script>
     <style>
+
+      html {
+        background-color: red;
+      }
 
       :root {
         --dark-mode-bg: #283137;
@@ -41,19 +40,17 @@
         transition: none !important;
       }
     </style>
-    <!-- mobile buttons bar -->
-    <meta name="theme-color" content="#000000">
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blibbo</title>
     
-		<link rel="modulepreload" href="/_app/immutable/entry/start.BVACokSm.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/Cj-1DzBM.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.BMMcOndX.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/C4-jE7Ps.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/C5a4dTmm.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/EC1b6dsO.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/Chn8Vsxa.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.DxZ4o6ZD.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.ByefLRHh.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/BZvgYRfh.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/BwHNii0A.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/Nr_TMK_u.js">
@@ -65,15 +62,15 @@
     <div style="display: contents">
 			<script>
 				{
-					__sveltekit_1xxwt2w = {
+					__sveltekit_ot7e9 = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.BVACokSm.js"),
-						import("/_app/immutable/entry/app.DxZ4o6ZD.js")
+						import("/_app/immutable/entry/start.BMMcOndX.js"),
+						import("/_app/immutable/entry/app.ByefLRHh.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});

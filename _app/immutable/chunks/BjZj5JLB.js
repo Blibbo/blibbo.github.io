@@ -1,0 +1,24 @@
+import{d as M,a as i,f as g}from"./DW9tHeZD.js";import{Z as q,_ as D,V as t,W as s,n as V,Y as A,i as j,a2 as F,X as d,a0 as O}from"./C1vi3Zl3.js";import{d as J}from"./B9MEGqY0.js";import{B as E,s as L,T as S,P as G,A as K,a as Q}from"./B0WlZlww.js";import{r as p,i as H,a as ee,b as ae,p as N}from"./Bi7yckft.js";import{a as x,t as U,s as f,C as te,c as se}from"./B5FRsOAW.js";var oe=M('<svg><path fill="currentColor" d="M28 4H4c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h24c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 22H12v-9h10.2l-3.6 3.6L20 22l6-6l-6-6l-1.4 1.4l3.6 3.6H12V6h16z"></path></svg>');function le(l,a){const o=p(a,["$$slots","$$events","$$legacy"]);var e=oe();x(e,()=>({viewBox:"0 0 32 32",width:"1.2em",height:"1.2em",...o})),i(l,e)}var ve=M('<svg><path fill="currentColor" d="M28 4H4c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h24c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 11H17.8l3.6-3.6L20 10l-6 6l6 6l1.4-1.4l-3.6-3.6H28v9H12V6h16z"></path></svg>');function ie(l,a){const o=p(a,["$$slots","$$events","$$legacy"]);var e=ve();x(e,()=>({viewBox:"0 0 32 32",width:"1.2em",height:"1.2em",...o})),i(l,e)}var re=M('<svg><g fill="none"><path stroke="currentColor" stroke-linejoin="round" stroke-width="4" d="M24 37c7.18 0 13-5.82 13-13s-5.82-13-13-13s-13 5.82-13 13s5.82 13 13 13Z"></path><path fill="currentColor" d="M24 6a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m14.5 6a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m6 14.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m-6 14.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5M24 47a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5M9.5 41a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m-6-14.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m6-14.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5"></path></g></svg>');function ne(l,a){const o=p(a,["$$slots","$$events","$$legacy"]);var e=re();x(e,()=>({viewBox:"0 0 48 48",width:"1.2em",height:"1.2em",...o})),i(l,e)}var de=M('<svg><path fill="currentColor" d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22C6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981"></path></svg>');function ce(l,a){const o=p(a,["$$slots","$$events","$$legacy"]);var e=de();x(e,()=>({viewBox:"0 0 24 24",width:"1.2em",height:"1.2em",...o})),i(l,e)}var fe=g("<button><!></button>");function me(l,a){q(a,!0);const o=()=>ae(U,"$theme",e),[e,m]=ee();let y=p(a,["$$slots","$$events","$$legacy","class"]);function T(){U.toggle()}var h=fe();x(h,()=>({...y,onclick:T,"aria-label":"Toggle theme",class:`${E} ${a.class??""}`}));var u=t(h);{var b=r=>{ne(r,{})},w=r=>{ce(r,{})};H(u,r=>{o()==="dark"?r(b):r(w,!1)})}s(h),i(l,h),D(),m()}var he=g("<a><!></a>");function ue(l,a){let o=p(a,["$$slots","$$events","$$legacy","children"]);var e=he();x(e,()=>({draggable:"false",...o}));var m=t(e);L(m,()=>a.children??V),s(e),i(l,e)}var _e=g(`<div><div></div> <div class="
+        min-h-full min-w-dvw fixed
+        sm:min-w-0
+        flex
+        z-50
+      "><div><div class="h-sait"></div> <!></div> <button title=""><div class="h-sait"></div> <div><!></div></button></div></div>`),$e=g("<button><!></button>"),ge=g("<div>Home</div>"),pe=g(`<div class="block min-h-dvh max-w-dvw overflow-clip
+  sm:flex
+"><!> <div class="sm:flex-1"><div class="bg-accent h-sait"></div> <div><div><nav><!> <!></nav> <nav><!></nav></div></div> <div class="
+      flex justify-center
+    "><div><!></div></div></div></div>`);function He(l,a){N(a,"menu",3,void 0);let o=N(a,"sidePanel",3,void 0),e=F(!1);var m=pe(),y=t(m);{var T=n=>{var v=_e(),_=t(v),k=d(_,2),$=t(k),c=d(t($),2);L(c,()=>o()??V),s($);var C=d($,2);C.__click=()=>{O(e,!1)};var B=d(t(C),2),Y=t(B);te(Y,{}),s(B),s(C),s(k),s(v),A(()=>{f(_,1,`${S} pointer-events-none hidden sm:block`),f($,1,`${K}
+          p-1
+        `),f(C,1,`sm:hidden
+            flex-1 h-dvh
+            ${Q} bg-overlay-dark
+            flex flex-col justify-start items-start text-on-accent
+          `),f(B,1,`${E} p-2 text-2xl`)}),i(n,v)};H(y,n=>{o()&&j(e)&&n(T)})}var h=d(y,2),u=d(t(h),2),b=t(u),w=t(b),r=t(w);{var W=n=>{var v=$e();v.__click=()=>{O(e,!j(e))};var _=t(v);{var k=c=>{ie(c,{})},$=c=>{le(c,{})};H(_,c=>{j(e)?c(k):c($,!1)})}s(v),A(()=>f(v,1,se(E))),i(n,v)};H(r,n=>{o()&&n(W)})}var Z=d(r,2);ue(Z,{href:"/",children:(n,v)=>{var _=ge();i(n,_)},$$slots:{default:!0}}),s(w);var R=d(w,2),I=t(R);me(I,{}),s(R),s(b),s(u);var z=d(u,2),P=t(z),X=t(P);L(X,()=>a.children??V),s(P),s(z),s(h),s(m),A(()=>{f(u,1,`
+        bg-accent text-on-accent md:flex md:justify-center text-nowrap
+        text-md sm:text-xl font-semibold select-none
+        ${S}
+      `),f(b,1,`
+          ${G} flex justify-between items-center h-full
+          *:flex *:items-center *:h-full
+          *:*:px-3 *:*:hover:bg-on-accent/overlay *:*:active:bg-off-accent/overlay *:*:focus-visible:outline-0 *:*:focus-visible:bg-on-accent/overlay *:*:h-full *:*:flex *:*:items-center *:*:overflow-clip
+        `),f(P,1,`${G} w-full`)}),i(l,m)}J(["click"]);export{ue as A,He as M};

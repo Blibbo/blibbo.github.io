@@ -21,24 +21,24 @@
     <style>
 
       :root {
-        --dark-mode-bg: #283137;
-        --light-mode-bg: white;
-        background-color: var(--light-mode-bg);
+        --dark-bg: #283137;
+        --light-bg: white;
+        background-color: var(--light-bg);
 
-        --current-bg-color: var(--light-mode-bg);
+        --current-bg-color: var(--light-bg);
 
-        --dark-mode-text: white;
-        --white-mode-text: black;
-        --text-color: var(--white-mode-text);
+        --light-text: white;
+        --dark-text: black;
+        --text-color: var(--dark-text);
         color: var(--text-color);
       }
 
       [data-theme="dark"] {
-        background-color: var(--dark-mode-bg);
+        background-color: var(--dark-bg);
 
-        --current-bg-color: var(--dark-mode-bg);
+        --current-bg-color: var(--dark-bg);
 
-        --text-color: var(--dark-mode-text);
+        --text-color: var(--light-text);
       }
 
       .no-theme-transition *, .no-theme-transition *::before, .no-theme-transition *::after {
@@ -48,36 +48,44 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <!-- mobile buttons bar -->
-    <meta name="theme-color" content="#FF0000">
+    <meta
+      name="theme-color"
+      content="#0fff0f"
+      media="(prefers-color-scheme: light)"
+    >
+    <meta
+      name="theme-color"
+      content="#f00000"
+      media="(prefers-color-scheme: dark)"
+    >
     <title>Blibbo</title>
     
-		<link rel="modulepreload" href="/_app/immutable/entry/start.BH53eZ9Q.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/Bt61309d.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/D3y0KaHQ.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/BtcYybrv.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/XgNu-7qU.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.4dHkrDVP.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/BYGwOAKB.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/Cq6tiJru.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/OjUvz2fc.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/Ca1REbpT.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/WPI0DaZJ.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DYhOmJxb.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.CKgshNpG.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/_4ILwvSK.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/C1vi3Zl3.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BB-odAjh.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/b8E7LKV1.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.DWPH-lXy.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/4bECdbzs.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/B9MEGqY0.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DW9tHeZD.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/Bi7yckft.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CpoIuMvu.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/C3yvoV6A.js">
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">
 			<script>
 				{
-					__sveltekit_1uh4ylb = {
+					__sveltekit_ii02bj = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.BH53eZ9Q.js"),
-						import("/_app/immutable/entry/app.4dHkrDVP.js")
+						import("/_app/immutable/entry/start.CKgshNpG.js"),
+						import("/_app/immutable/entry/app.DWPH-lXy.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});

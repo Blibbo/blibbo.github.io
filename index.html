@@ -1,88 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <script>
-    (function () {
-      document.documentElement.classList.add('no-theme-transition');
+<head>
+  <script>"use strict";(()=>{var c="#fff",f="#283137",p="#000",g="#fff",u=document.documentElement;function i(t,n){return typeof t!="object"||t===null?!1:Object.keys(t).length===n.length&&n.every(a=>Object.prototype.hasOwnProperty.call(t,a))}function l(t){return i(t,["color","contrastHint"])?typeof t.color=="string"&&(t.contrastHint==="light"||t.contrastHint==="dark"):!1}function P(t){return i(t,["dark","light"])?typeof t.dark=="string"&&typeof t.light=="string":!1}function y(t){return P(t)||l(t)}var e={dark:f,light:c},d="Blibbo.",I=`${d}prepaintInfo`;function m(){let t=localStorage.getItem(I);if(!t)return e;try{let n=JSON.parse(t);return y(n)?n:e}catch{return e}}function h(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}function k(t){return"dark"in t}function r(t){return t==="light"?p:g}function x(){let t=m();if(k(t)){let n=h();return{background:t[n],text:r(n)}}return{background:t.color,text:r(t.contrastHint)}}function o(t,n){u.style.setProperty("--"+t,n)}function s(){let{background:t,text:n}=x();o("page",t),o("on-page",n)}s();})();
+</script>
+  <style>
+    :root {
+      background-color: var(--page);
+      color: var(--on-page);
+    }
 
-      const stored = localStorage.getItem('theme');
-      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const theme = stored ?? (systemDark ? 'dark' : 'light');
-
-      document.documentElement.setAttribute('data-theme', theme);
-      document.documentElement.setAttribute('theme', theme); // mathfield virtual keyboard requires this
-
-      requestAnimationFrame(() => {
-        document.documentElement.classList.remove('no-theme-transition');
-      });
-
-    })();
-    </script>
-    <style>
-
-      :root {
-        --dark-bg: #283137;
-        --light-bg: white;
-        background-color: var(--light-bg);
-
-        --current-bg-color: var(--light-bg);
-
-        --light-text: white;
-        --dark-text: black;
-        --text-color: var(--dark-text);
-        color: var(--text-color);
-      }
-
-      [data-theme="dark"] {
-        background-color: var(--dark-bg);
-
-        --current-bg-color: var(--dark-bg);
-
-        --text-color: var(--light-text);
-      }
-
-      .no-theme-transition *, .no-theme-transition *::before, .no-theme-transition *::after {
-        transition: none !important;
-      }
-    </style>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="theme-color" content="white" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
-    <title>Blibbo</title>
-    
-		<link rel="modulepreload" href="/_app/immutable/entry/start.B7eQLBjB.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/CDcai4mv.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/C1vi3Zl3.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/BB-odAjh.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/b8E7LKV1.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.CMqPxRzh.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/4bECdbzs.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/B9MEGqY0.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DW9tHeZD.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/Bi7yckft.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/CpoIuMvu.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/C3yvoV6A.js">
-  </head>
-  <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">
+    .no-theme-transition *, .no-theme-transition *::before, .no-theme-transition *::after {
+      transition: none !important;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color">
+  <title>Blibbo</title>
+  <link href="/_app/immutable/entry/start.BaCEJNfi.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/USlNBbSF.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CDuorlk-.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.DLWNNWeJ.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DQX0xVGx.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CDng7zOe.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CtOjRV9A.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CpjKDsQ0.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.C9F9GjWr.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/B2e_1Sg8.js" rel="modulepreload">
+		
+		<link href="/_app/immutable/assets/0.CFesMvhI.css" rel="stylesheet">
+</head>
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">
 			<script>
 				{
-					__sveltekit_1tvlexm = {
+					__sveltekit_17yxrr1 = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.B7eQLBjB.js"),
-						import("/_app/immutable/entry/app.CMqPxRzh.js")
+						import("/_app/immutable/entry/start.BaCEJNfi.js"),
+						import("/_app/immutable/entry/app.DLWNNWeJ.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
 				}
 			</script>
 		</div>
-  </body>
+</body>
 </html>
